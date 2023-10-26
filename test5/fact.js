@@ -1,0 +1,9 @@
+let n = 30;
+
+for(let i = 1; i<=30; i++){
+
+    if(n%i==0){
+        console.log(i)
+    }
+}
+

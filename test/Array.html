@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3> array value</h3>
+
+
+    <p id="demo"></p>
+
+
+    <script>
+
+
+// let cars = ["Lambo", "Ferrari", "Maruti", "Aulto"];
+// // let cars = new Array("Lombo", "Ferrari", "Maruti")
+
+// cars[0]="lamborgini"
+
+// document.getElementById("demo").innerHTML= cars[cars.length-1]
+    
+
+let cars = ["Lambo", "Ferrari", "Maruti", "Aulto"];
+
+let carNum =  cars.length;
+
+let text = "<ul>";
+    for ( let i = 0; i < carNum; i++){
+        text += "<li>" +cars[i]+ "</li>";
+    }     
+text += "</ui>";
+
+
+// let text = "<ul>";
+// for (let i = 0; i < carNum; i++) {
+// 
+// }
+// text += "</ul>";
+
+
+
+document.getElementById("demo").innerHTML=text
+    
+    </script>
+    
+</body>
+</html>

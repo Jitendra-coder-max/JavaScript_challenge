@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="demo"></p>
+
+
+    <!-- <script>
+
+        let func1 = (a,b) => {
+
+            return  a+b;
+
+        }
+
+document.getElementById("demo").innerHTML= func1(2,3)
+
+    </script> -->
+
+
+
+
+
+
+
+
+
+<p id="filter"> here</p>
+
+    <script>
+
+        // let func1 = (a,b) => {
+
+        //     return a+b
+        // }
+
+        // document.getElementById("demo").innerHTML = func1(2,4)
+
+
+// function declaration
+        // function func1(){
+
+        //     return 5
+        // }
+
+
+// function expression
+
+
+// let a = function func1(){
+
+//     return 5
+// }
+
+
+
+function addNode(){
+var newP = document.createElement("p");
+var textNode = document.createTextNode("This is new text node")
+
+newP.appendChild(textNode);
+document.getElementById("filter").appendChild(newP)
+}
+
+
+
+
+    </script>
+
+    
+    
+</body>
+</html>

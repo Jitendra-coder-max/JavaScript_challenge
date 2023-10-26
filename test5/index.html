@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <form id="calculator-form">
+        <label for="operator">Select an operator:</label>
+        <select id="operator" name="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <br>
+        <label for="number1">Enter the first number:</label>
+        <input type="number" id="number1" name="number1" required>
+        <br>
+        <label for="number2">Enter the second number:</label>
+        <input type="number" id="number2" name="number2" required>
+        <br>
+        <input type="button" value="Calculate" onclick="calculateResult()">
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function calculateResult() {
+            const operator = document.getElementById('operator').value;
+            const number1 = parseFloat(document.getElementById('number1').value);
+            const number2 = parseFloat(document.getElementById('number2').value);
+            let result;
+
+            switch (operator) {
+                case '+':
+                    result = number1 + number2;
+                    break;
+
+                case '-':
+                    result = number1 - number2;
+                    break;
+
+                case '*':
+                    result = number1 * number2;
+                    break;
+
+                case '/':
+                    if (number2 === 0) {
+                        document.getElementById('result').textContent = 'Division by zero is not allowed';
+                        return;
+                    }
+                    result = number1 / number2;
+                    break;
+
+                default:
+                    document.getElementById('result').textContent = 'Invalid operator';
+                    return;
+            }
+
+            document.getElementById('result').textContent = `Result: ${result}`;
+        }
+    </script>
+</body>
+</html>

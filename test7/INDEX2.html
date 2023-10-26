@@ -1,0 +1,59 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id ='btn'> Try here</button>
+    <p id ="demo"> Para</p>
+
+    <script>
+
+        document.getElementById('btn').addEventListener('click', myFunc);
+
+        function myFunc(){
+
+            document.getElementById('demo').innerHTML = "Hello Motto"
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Items Example</title>
+    <style>
+        /* Add your CSS styles here if needed */
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li id="item1">OFF</li>
+        <li>OFF</li>
+        <li>OFF</li>
+        <li id="disabled">OFF</li>
+        <li>OFF</li>
+        <li id="item2">OFF</li>
+    </ul>
+    <button id="triggerButton">Click Me</button>
+    <script>
+        // JavaScript code as provided earlier
+        const listItems = document.querySelectorAll('#list li:not([id="disabled"])');
+
+        const handleClick = () => {
+            listItems.forEach(item => {
+                item.textContent = 'ON';
+            });
+        };
+
+        const buttonElement = document.querySelector('#triggerButton');
+        buttonElement.addEventListener('click', handleClick);
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="demo1">I am here</h1>
+    <p id="demo2"></p>
+
+    <script>
+      document.getElementById("demo2").innerHTML =
+        document.getElementById("demo1").childNodes[0].nodeValue;
+        // firstChild, childNodes[0],innerHTML
+    </script>
+  </body>
+</html>
