@@ -10,5 +10,5 @@ let  arr = [1,2,3,6,4,2,7,34,21,11,15,11]
 
 // }
 
- let min = arr.reduce((acc,cur) => {return  acc< cur ? acc: cur })
-console.log(min)
+//  let min = arr.reduce((acc,cur) => {return  acc< cur ? acc: cur })
+// console.log(min)
