@@ -244,12 +244,282 @@
 // // console.log(arr);
 
 
-let arr = [ 1,2,4,56,'a','b', 23 ,56,78,90,88]
+// let arr = [ 1,2,4,56,'a','b', 23 ,56,78,90,88]
 
-   let index1 =   arr.indexOf('a');
-   let index2 = arr.indexOf('b');
-    //   let index2 = arr.indexOf('b');
+//    let index1 =   arr.indexOf('a');
+//    let index2 = arr.indexOf('b');
+//     //   let index2 = arr.indexOf('b');
 
-// [arr[index1], arr[index2]] = [arr[index2], arr[index1]]
-[arr[index1], arr[index2]] = [arr[index2], arr[index1]];
-console.log(arr)
+// // [arr[index1], arr[index2]] = [arr[index2], arr[index1]]
+// [arr[index1], arr[index2]] = [arr[index2], arr[index1]];
+// console.log(arr)
+
+
+
+
+
+// var pattern = pattern;
+
+// var text = "This is a sample text with the word pattern in it.";
+// console.log(text.match("sample"));
+
+// console.log(matches)
+
+// const _ = require('lodash')
+
+
+// let person = {
+//     id:1,
+//     name: "Jit",
+//     lname: "Nishad"
+    
+// }
+
+// Object.seal(person)
+
+// person.age = 56;
+// console.log(person)
+
+//  console.log(Object.isSealed(person))
+
+
+
+
+
+// let person2 ={
+    
+// }
+
+// const {id ,name, lname} = person
+
+// person2 = {id,name,lname}
+// person2.name ="Ram"
+
+// console.log(person2)
+// console.log(person)
+
+//  console.log(person.name=== person2.name)
+// console.log(_.isEqual(person,person2))
+
+
+
+//  Object.freeze(person)
+
+//    let newOb = Object.isFrozen(person)
+
+//    console.log(newOb)
+
+
+
+
+// const myObject = {
+//     key1: 'value1',
+//     key2: 'value2',
+//     key3: 'value3'
+// };
+
+//    let value = Object.values(myObject)
+// console.log(value)
+
+//  let myObj = Object.entries(myObject)
+
+//  for(let [key,val]  of myObj){
+//     console.log(`${key} == ${val}`)
+//  }
+
+//  console.log(myObj)
+//  Object.keys(myObject).forEach(key  => {
+//     console.log(`${key}  and  ${myObject[key]}`)
+// })
+
+// for (let i in myObject){
+
+//     console.log(` key is ${i} and value ${myObject[i]}`)
+// }
+
+// let URL = "https://www.example.com/search?q=query with spaces&lang=JavaScript"
+
+//         // let encodeURL = encodeURIComponent(URL)
+//         let encodeURL = encodeURI(URL)
+
+//         console.log(encodeURL)
+
+
+
+
+// function Car(make, model) {
+//     this.make = make;
+//     this.model = model;
+// }
+
+
+// const extensibleObject = { a: 1, b: 2 };
+
+// //    Object.preventExtension(extensibleObject)
+// Object.freeze(extensibleObject)
+
+//                  let extent = Object.isExtensible(extensibleObject)
+
+//                  console.log(extent)
+
+
+
+// let str = "Hello world"
+
+//       let vowel =         str.match(/[aeiouAIOUE]/g)
+
+//       console.log(vowel)
+
+
+// let person = {
+//     name: "Jit",
+//    
+// }
+
+// const { name , age = 56 } = person
+
+// console.log(age)
+
+
+
+// let numbers = [1,2]
+// const [ first, sec = 66, third = 56] = numbers
+
+// console.log(sec)
+
+
+
+//  let arr = [3,4,3,23,56,78,9,3,'a','b', 45,67,34,23];
+
+//  let str1 = arr.indexOf('a');
+//  let str2 = arr.indexOf('b');
+
+//  [arr[str1],arr[str2]] = [arr[str2], arr[str1]];
+
+
+// console.log(arr)
+
+
+// let str = 'myWeb'
+
+// let n = 3 
+
+//   let  repeatStr = ''
+
+
+//   for(let i =0; i<=n; i++){
+//     repeatStr +=  ' '+ str
+//   }
+
+//   console.log(repeatStr)
+
+// const array = [['key1', 'value1'], ['key2', 'value2'], ['key3', 'value3']];
+
+// const obj = Object.fromEntries(array)
+
+// console.log(obj);
+
+
+
+// function myFunc( arr1){
+
+// console.log(isNaN(arr1))
+        
+// }
+
+// myFunc("")
+    // let newStr =  str.repeat(3)
+
+    // console.log(newStr)
+
+
+
+
+
+
+// let car = new Car('Toyota', 'Carry')
+
+// console.log(car.make)
+// console.log(car.model)
+
+
+
+
+
+
+// const length = 5; // Specify the length of the array
+// const staticValue = 42; // The value to fill the array with
+
+// const filledArray = Array.from({ length}, () => 42);
+
+// console.log(filledArray);
+// Output: [42, 42, 42, 42, 42]
+
+// a
+
+// let arrays = [12,23,34,56,78,90]
+
+
+//   let newArr = arrays.some((arr) =>  arr<=12)
+
+//   console.log(newArr)
+
+
+
+// let day = new Date()
+// let num = 15;
+//     let newData = day.getTime()+ num*60*1000
+//     let newDate = new Date(newData)
+// console.log(newData)
+//     console.log(day)
+//     console.log(newDate)
+
+
+
+
+// Create a Date object for the initial date and time
+// const initialDate = new Date();
+
+// // Calculate the timestamp for 15 minutes later
+// const fifteenMinutesLaterTimestamp = initialDate.getTime() + 15 * 60 * 1000;
+
+// // Create a new Date object using the updated timestamp
+// const newDate = new Date(fifteenMinutesLaterTimestamp);
+
+// console.log("Initial Date:", initialDate);
+// console.log("New Date (15 minutes later):", newDate);
+
+      
+                //    localStorage.setItem("nam", "Jit")
+                // localStorage.setItem("userName", "John");
+
+        //    let myName =  localStorage.getItem("nam")
+        // const userName = localStorage.getItem("userName");
+
+        // console.log(userName)
+
+        //    console.log(myName)
+           
+        
+        
+        // console.log( n)
+let n = 4
+let count = 0
+
+        for(let i = 2; i<=n/2; i++){
+
+            if(n%i ==0){
+                 count ++
+            }
+               
+           
+
+            
+        }
+
+          if( n !== 1 && count ==0){
+            console.log("Prime")
+          }
+          else{
+            console.log("Not prime")
+          }
